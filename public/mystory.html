@@ -1,81 +1,74 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/league.css" id="theme">
+    <link rel="stylesheet" href="dist/reset.css">
+    <link rel="stylesheet" href="dist/reveal.css">
+    <link rel="stylesheet" href="dist/theme/league.css" id="theme">
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h2>
-						My Story
-					</h2>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" id="highlight-theme">
+</head>
+<body>
+<div class="reveal">
+    <div class="slides">
+        <section id="start">
+            <h2>My Story</h2>
+            <a href="#/page1">Begin</a>
+        </section>
 
-					<a href="#/page1">Begin</a>
-				</section>
+        <section data-markdown id="page1">
+            <script type="text/template">
+                ## Page 1 of My Story
+                This is a story with multiple paths:
+                * [Page2](#/page2)
+                * [Page3](#/page3)
+            </script>
+        </section>
 
-				<section data-markdown id="page1">
-					<script type="text/template">
-						## Page 1 of My Story
-						This is a story with multiple paths:
-						* [Page2](#/page2)
-						* [Page3](#/page3)
-					</script>
-				</section>
-
-				<section id="page2">
-					<h2>Page 2 of My Story</h2>
-					<p>
-						I might have these choices on this page:
-					</p>
-					<ul>
-						<li><a href="#/page1">Page 1</a></li>
-						<li><a href="#/page3">Page 3</a></li>
-					</ul>
-				</section>
+        <section id="page2">
+            <h2>Page 2 of My Story</h2>
+            <p>I might have these choices on this page:</p>
+            <ul>
+                <li><a href="#/page1">Page 1</a></li>
+                <li><a href="#/page3">Page 3</a></li>
+            </ul>
+        </section>
 
 
-				<section id="page3">
-					<h2>Page 3 of My Story</h2>
-					<p>
-						I might have links to <a href="#/page1">Page 1</a> and
-						<a href="#/page2">Page 2</a> on this page
-					</p>
-				</section>
+        <section id="page3">
+            <h2>Page 3 of My Story</h2>
+            <p>
+                I might have links to <a href="#/page1">Page 1</a> and
+                <a href="#/page2">Page 2</a> on this page.
+            </p>
+			<p>
+				<a href="https://github.com/pambrose/revealjs-example/blob/master/public/mystory.html">Here</a> is the source for these pages.
+			</p>
+        </section>
 
-			</div>
-		</div>
+	</div>
+</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				controls: false,
-				progress: false,
-				center: true,
-				keyboard: false,
-				touch: false,
-				hash: true,
-				transition: 'zoom', // none/fade/slide/convex/concave/
-
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+<script src="dist/reveal.js"></script>
+<script src="plugin/notes/notes.js"></script>
+<script src="plugin/markdown/markdown.js"></script>
+<script src="plugin/highlight/highlight.js"></script>
+<script>
+    Reveal.initialize({
+        controls: false,
+        progress: false,
+        center: true,
+        keyboard: false,
+        touch: false,
+        hash: true,
+        transition: 'zoom', // none/fade/slide/convex/concave/
+		plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
+    });
+</script>
+</body>
 </html>
