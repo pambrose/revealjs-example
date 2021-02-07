@@ -8,8 +8,8 @@
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="../public/dist/reveal.css">
-		<link rel="stylesheet" href="../public/dist/theme/white.css" id="theme">
+		<link rel="stylesheet" href="../dist/reveal.css">
+		<link rel="stylesheet" href="../dist/theme/white.css" id="theme">
 	</head>
 
 	<body>
@@ -42,31 +42,31 @@
 
 				<section>
 					<h2>Auto-playing audio</h2>
-					<audio src="assets/beeping.wav" data-autoplay></audio>
+					<audio src="../assets/beeping.wav" data-autoplay></audio>
 				</section>
 
 				<section>
 					<h2>Audio inside slide fragments</h2>
 					<div class="fragment">
 						Beep 1
-						<audio src="assets/beeping.wav" data-autoplay></audio>
+						<audio src="../assets/beeping.wav" data-autoplay></audio>
 					</div>
 					<div class="fragment">
 						Beep 2
-						<audio src="assets/beeping.wav" data-autoplay></audio>
+						<audio src="../assets/beeping.wav" data-autoplay></audio>
 					</div>
 				</section>
 
 				<section>
 					<h2>Audio with controls</h2>
-					<audio src="assets/beeping.wav" controls></audio>
+					<audio src="../assets/beeping.wav" controls></audio>
 				</section>
 
 			</div>
 
 		</div>
 
-		<script src="../public/dist/reveal.js"></script>
+		<script src="../dist/reveal.js"></script>
 		<script>
 			Reveal.initialize({hash: true});
 		</script>
