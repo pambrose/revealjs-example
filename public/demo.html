@@ -30,98 +30,10 @@
     <div class="slides">
 
         <section>
-            <h2>Hello There</h2>
+            <h2>Hello</h2>
             <p>
-                reveal.js enables you to create beautiful interactive slide decks using HTML. This presentation will
-                show you examples of what it can do.
+                reveal.js enables you to create beautiful interactive slide decks using HTML and Markdown.
             </p>
-        </section>
-
-        <!-- Example of nested vertical slides -->
-        <section>
-            <section>
-                <h2>Vertical Slides</h2>
-                <p>Slides can be nested inside of each other.</p>
-                <p>Use the <em>Space</em> key to navigate through all slides.</p>
-                <br>
-                <a href="#" class="navigate-down">
-                    <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238"
-                         data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
-                </a>
-            </section>
-            <section>
-                <h2>Basement Level 1</h2>
-                <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
-            </section>
-            <section>
-                <h2>Basement Level 2</h2>
-                <p>That's it, time to go back up.</p>
-                <br>
-                <a href="#/2">
-                    <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);"
-                         width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
-                </a>
-            </section>
-        </section>
-
-        <section id="slides-com">
-            <h2>Slides</h2>
-            <p>
-                Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a
-                    href="https://slides.com" target="_blank">https://slides.com</a>.
-            </p>
-        </section>
-
-        <section id="point-of-view">
-            <h2>Point of View</h2>
-            <p>
-                Press <strong>ESC</strong> to enter the slide overview.
-            </p>
-            <p>
-                Hold down the <strong>alt</strong> key (<strong>ctrl</strong> in Linux) and click on any element to zoom
-                towards it using <a href="http://lab.hakim.se/zoom-js">zoom.js</a>. Click again to zoom back out.
-            </p>
-            <p>
-                (NOTE: Use ctrl + click in Linux.)
-            </p>
-        </section>
-
-        <section data-visibility="hidden" data-auto-animate
-                 data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-            <h2>Auto-Animate</h2>
-            <p>Automatically animate matching elements across slides with <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.
-            </p>
-            <div class="r-hstack justify-center">
-                <div data-id="box1"
-                     style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-                <div data-id="box2"
-                     style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-                <div data-id="box3"
-                     style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
-            </div>
-        </section>
-        <section data-visibility="hidden" data-auto-animate
-                 data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-            <div class="r-hstack justify-center">
-                <div data-id="box1" data-auto-animate-delay="0"
-                     style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
-                <div data-id="box2" data-auto-animate-delay="0.1"
-                     style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
-                <div data-id="box3" data-auto-animate-delay="0.2"
-                     style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
-            </div>
-            <h2 style="margin-top: 20px;">Auto-Animate</h2>
-        </section>
-        <section data-visibility="hidden" data-auto-animate
-                 data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
-            <div class="r-stack">
-                <div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
-                <div data-id="box2"
-                     style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
-                <div data-id="box3"
-                     style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
-            </div>
-            <h2 style="margin-top: 20px;">Auto-Animate</h2>
         </section>
 
         <section id="optimized">
@@ -132,22 +44,45 @@
             </p>
         </section>
 
-        <section data-markdown>
+        <section id="markdown-example" data-markdown>
             <script type="text/template">
-                ## Markdown support
+                ## Markdown Support
 
-                Write content using inline or external Markdown.
-                Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+                Write content using inline or external [Markdown](https://guides.github.com/features/mastering-markdown/).
 
                 ```[]
                 <section data-markdown>
-                    ## Markdown support
+                    ## Markdown Support
 
-                    Write content using inline or external Markdown.
-                    Instructions and more info available in the [docs](https://revealjs.com/markdown/).
+                    Write content using inline or external [Markdown](https://guides.github.com/features/mastering-markdown/).
                 </section>
                 ```
             </script>
+        </section>
+
+        <section id="html-example">
+            <h2>HTML Support</h2>
+
+            <p>
+                Write content using HTML.
+            </p>
+
+            <pre style="background-color: #7f9f7f;">
+            &lt;section>
+                &lt;h2>HTML Support&lt;/h2>
+
+                &lt;p>
+                    Write content using HTML.
+                &lt;/p>
+            &lt;/section></pre>
+        </section>
+
+        <section id="slides-com">
+            <h2>WYSIWYG Support</h2>
+            <p>
+                Don't want to write code? Not a problem. There's a fully-featured visual editor for authoring these at: <a
+                    href="https://slides.com" target="_blank">https://slides.com</a>.
+            </p>
         </section>
 
         <section id="fragment-overview">
@@ -201,8 +136,8 @@
                 reveal.js comes with a few themes built in: <br>
                 <!-- Hacks to swap themes after the page has loaded. Not flexible and only intended for the reveal.js demo deck. -->
                 <a href="#"
-                   onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black
-                    (default)</a> -
+                   onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black</a>
+                -
                 <a href="#"
                    onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a>
                 -
@@ -235,7 +170,7 @@
             </p>
         </section>
 
-        <section>
+        <section id="backgrounds" data-visibility="hidden">
             <section data-background="#dddddd">
                 <h2>Slide Backgrounds</h2>
                 <p>
@@ -269,7 +204,7 @@
             </section>
         </section>
 
-        <section>
+        <section id="multimedia-examples">
             <h2>Examples of embedded Video, Audio and Iframes</h2>
         </section>
 
@@ -318,49 +253,8 @@
             <audio src="assets/beeping.wav" controls></audio>
         </section>
 
-        <section id="tables" data-visibility="hidden" >
-            <h2>Tabular Tables</h2>
-            <table>
-                <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Value</th>
-                    <th>Quantity</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr>
-                    <td>Apples</td>
-                    <td>$1</td>
-                    <td>7</td>
-                </tr>
-                <tr>
-                    <td>Lemonade</td>
-                    <td>$2</td>
-                    <td>18</td>
-                </tr>
-                <tr>
-                    <td>Bread</td>
-                    <td>$3</td>
-                    <td>2</td>
-                </tr>
-                </tbody>
-            </table>
-        </section>
-
-        <section id="quotes" data-visibility="hidden" >
-            <h2>Clever Quotes</h2>
-            <p>
-                These guys come in two forms, inline: <q
-                    cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The
-                nice thing about standards is that there are so many to choose from</q> and block:
-            </p>
-            <blockquote
-                    cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
-                &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of
-                typewriters would
-                reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
-            </blockquote>
+        <section id="link-examples">
+            <h2>Linking between pages</h2>
         </section>
 
         <section data-markdown id="page1">
@@ -390,6 +284,135 @@
                 <a href="#/page1">Page 1</a>,
                 <a href="#/page2">Page 2</a>
             </p>
+        </section>
+
+        <section>
+            <h2>d3.js Slides</h2>
+            <iframe data-autoplay width="700" height="540"
+                    src="https://rajgoel.github.io/reveal.js-demos/anything-demo.html#/4"
+                    frameborder="0"></iframe>
+        </section>
+
+
+        <section id="point-of-view">
+            <h2>Point of View</h2>
+            <p>
+                Press <strong>ESC</strong> to enter the slide overview.
+            </p>
+            <p>
+                Hold down the <strong>alt</strong> key and click on any element to zoom
+                towards it. Click again to zoom back out.
+            </p>
+        </section>
+
+        <!-- Example of nested vertical slides -->
+        <section id="vertical-slides">
+            <section>
+                <h2>Vertical Slides</h2>
+                <p>Slides can be nested inside of each other.</p>
+                <p>Use the <em>Space</em> key to navigate through all slides.</p>
+                <br>
+                <a href="#" class="navigate-down">
+                    <img class="r-frame" style="background: rgba(255,255,255,0.1);" width="178" height="238"
+                         data-src="https://static.slid.es/reveal/arrow.png" alt="Down arrow">
+                </a>
+            </section>
+            <section>
+                <h2>Basement Level 1</h2>
+                <p>Nested slides are useful for adding additional detail underneath a high level horizontal slide.</p>
+            </section>
+            <section>
+                <h2>Basement Level 2</h2>
+                <p>That's it, time to go back up.</p>
+                <br>
+                <a href="#/2">
+                    <img class="r-frame" style="background: rgba(255,255,255,0.1); transform: rotate(180deg);"
+                         width="178" height="238" data-src="https://static.slid.es/reveal/arrow.png" alt="Up arrow">
+                </a>
+            </section>
+        </section>
+
+        <section data-visibility="hidden" data-auto-animate
+                 data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+            <h2>Auto-Animate</h2>
+            <p>Automatically animate matching elements across slides with <a href="https://revealjs.com/auto-animate/">Auto-Animate</a>.
+            </p>
+            <div class="r-hstack justify-center">
+                <div data-id="box1"
+                     style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                <div data-id="box2"
+                     style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+                <div data-id="box3"
+                     style="background: #999; width: 50px; height: 50px; margin: 10px; border-radius: 5px;"></div>
+            </div>
+        </section>
+        <section data-visibility="hidden" data-auto-animate
+                 data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+            <div class="r-hstack justify-center">
+                <div data-id="box1" data-auto-animate-delay="0"
+                     style="background: cyan; width: 150px; height: 100px; margin: 10px;"></div>
+                <div data-id="box2" data-auto-animate-delay="0.1"
+                     style="background: magenta; width: 150px; height: 100px; margin: 10px;"></div>
+                <div data-id="box3" data-auto-animate-delay="0.2"
+                     style="background: yellow; width: 150px; height: 100px; margin: 10px;"></div>
+            </div>
+            <h2 style="margin-top: 20px;">Auto-Animate</h2>
+        </section>
+        <section data-visibility="hidden" data-auto-animate
+                 data-auto-animate-easing="cubic-bezier(0.770, 0.000, 0.175, 1.000)">
+            <div class="r-stack">
+                <div data-id="box1" style="background: cyan; width: 300px; height: 300px; border-radius: 200px;"></div>
+                <div data-id="box2"
+                     style="background: magenta; width: 200px; height: 200px; border-radius: 200px;"></div>
+                <div data-id="box3"
+                     style="background: yellow; width: 100px; height: 100px; border-radius: 200px;"></div>
+            </div>
+            <h2 style="margin-top: 20px;">Auto-Animate</h2>
+        </section>
+
+        <section id="tables" data-visibility="hidden">
+            <h2>Tabular Tables</h2>
+            <table>
+                <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Value</th>
+                    <th>Quantity</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Apples</td>
+                    <td>$1</td>
+                    <td>7</td>
+                </tr>
+                <tr>
+                    <td>Lemonade</td>
+                    <td>$2</td>
+                    <td>18</td>
+                </tr>
+                <tr>
+                    <td>Bread</td>
+                    <td>$3</td>
+                    <td>2</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="quotes" data-visibility="hidden">
+            <h2>Clever Quotes</h2>
+            <p>
+                These guys come in two forms, inline: <q
+                    cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">The
+                nice thing about standards is that there are so many to choose from</q> and block:
+            </p>
+            <blockquote
+                    cite="http://searchservervirtualization.techtarget.com/definition/Our-Favorite-Technology-Quotations">
+                &ldquo;For years there has been a theory that millions of monkeys typing at random on millions of
+                typewriters would
+                reproduce the entire works of Shakespeare. The Internet has proven this theory to be untrue.&rdquo;
+            </blockquote>
         </section>
 
         <section data-visibility="hidden" id="speak-view">
@@ -452,7 +475,7 @@ Reveal.on( 'customevent', function() {
         hash: true,
 
         // Learn about plugins: https://revealjs.com/plugins/
-        plugins: [RevealZoom, RevealNotes, RevealSearch, RevealMarkdown, RevealHighlight]
+        plugins: [RevealZoom, RevealSearch, RevealMarkdown, RevealHighlight]
     });
 
 </script>
