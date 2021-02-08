@@ -4,7 +4,7 @@
   "description": "The HTML Presentation Framework",
   "homepage": "https://athenian-stories.netlify.app",
   "subdomain": "revealjs",
-  "main": "public/index.html",
+  "main": "public/dist/reveal.js",
   "module": "public/dist/reveal.esm.js",
   "license": "MIT",
   "scripts": {
