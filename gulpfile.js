@@ -248,17 +248,17 @@ gulp.task('build', gulp.parallel('js', 'css', 'plugins'))
 gulp.task('package', gulp.series('default', () =>
 
     gulp.src([
-        './index.html',
-        './dist/**',
-        './lib/**',
-        './images/**',
-        './plugin/**',
-        './**.md'
+        './public/index.html',
+        './public/dist/**',
+        './public/lib/**',
+        './public/images/**',
+        './public/plugin/**',
+        './public/**.md'
     ]).pipe(zip('reveal-js-presentation.zip')).pipe(gulp.dest('./'))
 
 ))
 
-gulp.task('reload', () => gulp.src(['*.html', '*.md'])
+gulp.task('reload', () => gulp.src(['public/*.html', 'public/*.md'])
     .pipe(connect.reload()));
 
 gulp.task('serve', () => {
