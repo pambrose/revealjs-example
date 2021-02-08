@@ -1,0 +1,3 @@
+tasks:
+  - init:  npm install gulp
+    command: npm start
