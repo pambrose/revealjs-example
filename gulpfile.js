@@ -21,7 +21,7 @@ const minify = require('gulp-clean-css')
 const connect = require('gulp-connect')
 const autoprefixer = require('gulp-autoprefixer')
 
-const root = yargs.argv.root || '.'
+const root = yargs.argv.root || 'public/'
 const port = yargs.argv.port || 8000
 
 const banner = `/*!
@@ -270,22 +270,19 @@ gulp.task('serve', () => {
         livereload: true
     })
 
-    gulp.watch(['*.html', '*.md'], gulp.series('reload'))
+    gulp.watch(['public/*.html', 'public/*.md'], gulp.series('reload'))
 
-    gulp.watch(['js/**'], gulp.series('js', 'reload', 'test'))
+    gulp.watch(['public/js/**'], gulp.series('js', 'reload', 'test'))
 
-    gulp.watch(['plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
+    gulp.watch(['public/plugin/**/plugin.js'], gulp.series('plugins', 'reload'))
 
     gulp.watch([
-        'css/theme/source/*.{sass,scss}',
-        'css/theme/template/*.{sass,scss}',
+        'public/css/theme/source/*.{sass,scss}',
+        'public/css/theme/template/*.{sass,scss}',
     ], gulp.series('css-themes', 'reload'))
 
     gulp.watch([
-        'css/*.scss',
-        'css/print/*.{sass,scss,css}'
+        'public/css/*.scss',
+        'public/css/print/*.{sass,scss,css}'
     ], gulp.series('css-core', 'reload'))
-
-    gulp.watch(['test/*.html'], gulp.series('test'))
-
 })
