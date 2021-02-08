@@ -2,9 +2,9 @@
   "name": "reveal.js",
   "version": "4.1.0",
   "description": "The HTML Presentation Framework",
-  "homepage": "https://revealjs.com",
+  "homepage": "https://athenian-stories.netlify.app",
   "subdomain": "revealjs",
-  "main": "public/dist/reveal.js",
+  "main": "public/index.html",
   "module": "public/dist/reveal.esm.js",
   "license": "MIT",
   "scripts": {
