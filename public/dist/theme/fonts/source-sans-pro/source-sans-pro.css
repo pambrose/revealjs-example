@@ -1,9 +1,9 @@
 @font-face {
     font-family: 'Source Sans Pro';
-    src: url('public/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.eot');
-    src: url('public/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.eot?#iefix') format('embedded-opentype'),
-         url('public/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.woff') format('woff'),
-         url('public/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.ttf') format('truetype');
+    src: url('/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.eot');
+    src: url('/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.eot?#iefix') format('embedded-opentype'),
+         url('/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.woff') format('woff'),
+         url('/dist/theme/fonts/source-sans-pro/source-sans-pro-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
