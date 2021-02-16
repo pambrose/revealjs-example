@@ -1,4 +1,4 @@
-# reveal.js Example
+# reveal.js Template
 
 [![Template](https://img.shields.io/badge/Create%20your%20own%20revealjs-presentation-blue?logo=github)](https://github.com/pambrose/revealjs-template/generate)
 
